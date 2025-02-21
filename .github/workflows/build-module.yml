@@ -13,19 +13,19 @@ jobs:
       matrix:
         build_env:
           - tag: "24.10.0-rc2"
-            pkgarch: aarch64
+            pkgarch: aarch64_cortex-a53
             target: mediatek
             subtarget: filogic
-            vermagic: "5c9be91b90bda5403fe3a7c4e8ddb26f"
-          - tag: "23.05.0"
-            pkgarch: mipsel_24kc
-            target: ramips
-            subtarget: mt7621
-            vermagic: "9c242f353867f49a96054ff8c9f2c460"
-          - tag: "23.05.2"
-            pkgarch: mipsel_24kc
-            target: ramips
-            subtarget: mt7621
+            vermagic: "0645ca2e528c1ec9171c95cdd5761b53"
+          - tag: "24.10.0-rc2"
+            pkgarch: aarch64_cortex-a53
+            target: mediatek
+            subtarget: filogic
+            vermagic: "0645ca2e528c1ec9171c95cdd5761b53-r1"
+          - tag: "24.0.0"
+            pkgarch: aarch64_cortex-a53
+            target: mediatek
+            subtarget: filogic
             vermagic: "9c242f353867f49a96054ff8c9f2c460"
 
     steps:
